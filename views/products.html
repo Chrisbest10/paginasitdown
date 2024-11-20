@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listado de productos</title>
+    <link type="text/css" rel="stylesheet" href="/css/style.css">  
+    <link type="text/css" rel="stylesheet" href="/css/style5.css">
+</head>
+<body>
+    <h1>Listado de productos</h1>
+    <h4><a class="link1" href="/products/create">Crear producto</a></h4>
+    <ul>
+        <% productos.forEach(producto => { %>
+            <a class="nombres" href="/products/detail/<%= producto._id %>">
+              <li><%=producto.name %> - $ <%= producto.price %></li>
+            </a>
+       <% })  %> 
+    </ul>
+    <h4><a class="link2" href="/products/remove">Borrar producto</a></h4>
+</body>
+</html>

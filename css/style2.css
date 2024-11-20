@@ -1,0 +1,10584 @@
+:root{
+  --white: #f9f9f9;
+  --black: #36383F;
+  --gray: #85888C;
+} /* variables*/
+
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+
+/* Header */
+.header{
+background-color: var(--black);
+box-shadow: 1px 1px 5px 0px var(--gray);
+position: sticky;
+top: 0;
+width: 100%;
+position: fixed;
+z-index: 999;
+}
+         
+/* Logo */
+         
+.logo{
+display: inline-block;
+color: var(--white);
+font-size: 60px;
+margin-left: 50px;
+}
+
+
+/* Nav menu */
+.nav{
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: var(--black);
+overflow: hidden;
+}
+
+.menu a{
+  display: block;
+  padding: 50px;
+  color: var(--white);
+  text-align: center;
+  font-size: 30px;
+}
+         
+.menu a:hover{
+background-color: var(--gray);
+}
+
+.nav{
+max-height: 0;
+transition: max-height .5s ease-out;
+}
+
+
+/* Menu Icon */
+.hamb{
+cursor: pointer;
+float: right;
+padding: 40px 20px;
+}/* Style label tag */
+         
+.hamb-line {
+background: var(--white);
+display: block;
+height: 2px;
+position: relative;
+width: 24px;
+} /* Style span tag */
+         
+.hamb-line::before,
+.hamb-line::after{
+background: var(--white);
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%;
+}
+
+.hamb-line::before{
+top: 5px;
+}
+
+.hamb-line::after{
+top: -5px;
+}
+         
+.side-menu {
+display: none;
+} /* Hide checkbox *
+
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+max-height: 100%;
+}
+         
+.side-menu:checked ~ .hamb .hamb-line {
+background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+transform: rotate(-45deg);
+top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+transform: rotate(45deg);
+top:0;
+}
+
+/* Responsive */
+
+@media (max-width: 1050px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 320px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 90px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -420px;
+    top: 590px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 250px;
+    left: 335px;
+  }
+
+  .contado{
+    margin-top: 470px;
+    margin-left: 250px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 190px;
+    margin-top: 390px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 160px;
+    margin-top: 170px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 135px;
+    margin-top: -50px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 230px;
+    margin-top: 90px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 460px;
+    margin-bottom: -960px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 230px;
+    margin-bottom: -390px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 300px;
+    margin-top: 750px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 230px;
+    margin-top: 750px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: 125px;
+    margin-top: 750px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -10px;
+    margin-top: 740px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 270px;
+    top: 790px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 290px;
+    top: 860px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 385px;
+    top: 785px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 230px;
+    top: 740px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 630px;
+    right: 430px;
+  }
+
+
+  .contado1{
+    margin-top: 850px;
+    margin-left: 255px;
+  }
+  
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: absolute;
+    left: -420px;
+    top: 1255px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: absolute;
+    right: 460px;
+    top: 1200px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 285px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 20px;
+    margin-top: -50px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 58%;
+    margin-left: 190px;
+    margin-top: -30px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 270px;
+    margin-top: 10px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 290px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 5px;
+    margin-top: -120px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 25px;
+    margin-top: -60px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -480px;
+    margin-top: 840px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -480px;
+    margin-top: 840px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -485px;
+    margin-top: 1250px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 105px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 1000px;
+ left: 290px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1400px;
+  left: 190px;
+ }
+
+}
+
+@media (max-width: 1000px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 310px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 90px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -380px;
+    top: 590px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 250px;
+    left: 335px;
+  }
+
+  .contado{
+    margin-top: 470px;
+    margin-left: 250px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 180px;
+    margin-top: 370px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 155px;
+    margin-top: 160px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 135px;
+    margin-top: -50px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 210px;
+    margin-top: 40px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 420px;
+    margin-bottom: -920px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 215px;
+    margin-bottom: -340px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 290px;
+    margin-top: 720px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 215px;
+    margin-top: 720px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: 110px;
+    margin-top: 720px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -20px;
+    margin-top: 690px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 270px;
+    top: 790px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 270px;
+    top: 810px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 385px;
+    top: 785px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 230px;
+    top: 740px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 580px;
+    right: 410px;
+  }
+
+
+  .contado1{
+    margin-top: 790px;
+    margin-left: 245px;
+  }
+  
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: absolute;
+    left: -400px;
+    top: 1160px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: absolute;
+    right: 440px;
+    top: 1100px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 275px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 20px;
+    margin-top: -50px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 58%;
+    margin-left: 190px;
+    margin-top: -30px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 270px;
+    margin-top: 10px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 270px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 2px;
+    margin-top: -120px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 25px;
+    margin-top: -60px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -440px;
+    margin-top: 840px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -440px;
+    margin-top: 840px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -450px;
+    margin-top: 1150px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 105px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 1000px;
+ left: 290px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1300px;
+  left: 180px;
+ }
+
+}
+
+@media (max-width: 950px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 280px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 80px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -370px;
+    top: 570px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 250px;
+    left: 295px;
+  }
+
+  .contado{
+    margin-top: 400px;
+    margin-left: 200px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 150px;
+    margin-top: 370px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 120px;
+    margin-top: 160px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: -50px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 350px;
+    margin-bottom: -890px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 180px;
+    margin-bottom: -315px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 250px;
+    margin-top: 680px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 175px;
+    margin-top: 680px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: 70px;
+    margin-top: 680px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -60px;
+    margin-top: 660px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 230px;
+    top: 770px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 230px;
+    top: 780px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 350px;
+    top: 790px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 190px;
+    top: 740px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 540px;
+    right: 385px;
+  }
+
+
+  .contado1{
+    margin-top: 760px;
+    margin-left: 210px;
+  }
+  
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: absolute;
+    left: -375px;
+    top: 1160px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: absolute;
+    right: 415px;
+    top: 1100px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 250px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 230px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -50px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 58%;
+    margin-left: 170px;
+    margin-top: -30px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 240px;
+    margin-top: 10px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 240px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 2px;
+    margin-top: -120px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 25px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -415px;
+    margin-top: 830px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -415px;
+    margin-top: 830px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -420px;
+    margin-top: 1150px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 105px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 980px;
+ left: 245px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1300px;
+  left: 140px;
+ }
+
+}
+
+@media (max-width: 900px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 230px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 70px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -310px;
+    top: 450px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 160px;
+    left: 246px;
+  }
+
+  .contado{
+    margin-top: 370px;
+    margin-left: 182px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: 290px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 70px;
+    margin-top: 80px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 45px;
+    margin-top: -140px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-top: -80px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 265px;
+    margin-bottom: -790px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 135px;
+    margin-bottom: -220px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 210px;
+    margin-top: 585px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-top: 590px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: 580px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -105px;
+    margin-top: 560px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 185px;
+    top: 665px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 185px;
+    top: 680px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 299px;
+    top: 670px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 140px;
+    top: 630px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 440px;
+    right: 335px;
+  }
+
+  .contado1{
+    margin-top: 650px;
+    margin-left: 175px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 300px;
+    top: 970px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -140px;
+    top: 925px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 220px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 205px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -50px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 58%;
+    margin-left: 145px;
+    margin-top: -55px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 210px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 220px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 2px;
+    margin-top: -120px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 25px;
+    margin-top: -70px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -345px;
+    margin-top: 700px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -345px;
+    margin-top: 700px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -360px;
+    margin-top: 1010px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 105px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 850px;
+ left: 190px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1160px;
+  left: 95px;
+ }
+
+}
+
+@media (max-width: 800px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 230px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 70px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -310px;
+    top: 450px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 160px;
+    left: 246px;
+  }
+
+  .contado{
+    margin-top: 370px;
+    margin-left: 182px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: 290px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 70px;
+    margin-top: 80px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 45px;
+    margin-top: -140px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-top: -80px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 265px;
+    margin-bottom: -790px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-bottom: -220px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 210px;
+    margin-top: 585px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-top: 590px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: 580px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -105px;
+    margin-top: 560px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 185px;
+    top: 665px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 185px;
+    top: 680px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 299px;
+    top: 670px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 140px;
+    top: 630px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 440px;
+    right: 320px;
+  }
+
+  .contado1{
+    margin-top: 650px;
+    margin-left: 175px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 300px;
+    top: 970px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -140px;
+    top: 925px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 220px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 205px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -50px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 145px;
+    margin-top: -55px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 210px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 220px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 2px;
+    margin-top: -120px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 25px;
+    margin-top: -70px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -345px;
+    margin-top: 700px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -345px;
+    margin-top: 700px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -345px;
+    margin-top: 1010px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 105px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 850px;
+ left: 190px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1160px;
+  left: 95px;
+ }
+
+}
+
+@media (max-width: 781px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 200px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 75px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -290px;
+    top: 450px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 160px;
+    left: 246px;
+  }
+
+  .contado{
+    margin-top: 370px;
+    margin-left: 182px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: 290px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 70px;
+    margin-top: 80px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 45px;
+    margin-top: -140px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 120px;
+    margin-top: -80px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 265px;
+    margin-bottom: -790px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 120px;
+    margin-bottom: -220px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 200px;
+    margin-top: 585px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 125px;
+    margin-top: 590px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-top: 580px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -120px;
+    margin-top: 560px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 175px;
+    top: 665px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 185px;
+    top: 680px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 299px;
+    top: 670px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 140px;
+    top: 630px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 440px;
+    right: 310px;
+  }
+
+  .contado1{
+    margin-top: 650px;
+    margin-left: 172px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 290px;
+    top: 970px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -130px;
+    top: 925px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 220px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 205px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 139px;
+    margin-top: -45px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 210px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 220px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 2px;
+    margin-top: -100px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 24px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 25px;
+    margin-top: -70px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -330px;
+    margin-top: 700px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -330px;
+    margin-top: 700px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 105px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 850px;
+ left: 190px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1160px;
+  left: 85px;
+ }
+
+}
+
+@media (max-width: 775px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 200px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 65px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -290px;
+    top: 450px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 160px;
+    left: 225px;
+  }
+
+  .contado{
+    margin-top: 370px;
+    margin-left: 165px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 80px;
+    margin-top: 290px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 40px;
+    margin-top: 80px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: -140px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 110px;
+    margin-top: -90px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 240px;
+    margin-bottom: -780px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 110px;
+    margin-bottom: -210px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 180px;
+    margin-top: 585px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 105px;
+    margin-top: 585px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-top: 580px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 560px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 155px;
+    top: 665px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 165px;
+    top: 680px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 275px;
+    top: 670px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 120px;
+    top: 630px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 440px;
+    right: 310px;
+  }
+
+  .contado1{
+    margin-top: 650px;
+    margin-left: 155px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 265px;
+    top: 970px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -110px;
+    top: 925px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 210px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 190px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 130px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 190px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 200px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 2px;
+    margin-top: -100px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 19px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -330px;
+    margin-top: 700px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -330px;
+    margin-top: 700px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -340px;
+    margin-top: 1010px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 85px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 850px;
+ left: 190px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1160px;
+  left: 60px;
+ }
+
+}
+
+@media (max-width: 750px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 200px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 74px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -265px;
+    top: 430px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 160px;
+    left: 225px;
+  }
+
+  .contado{
+    margin-top: 370px;
+    margin-left: 165px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 80px;
+    margin-top: 290px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 40px;
+    margin-top: 80px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: -140px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: -90px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 195px;
+    margin-bottom: -780px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 98px;
+    margin-bottom: -199px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 175px;
+    margin-top: 570px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: 570px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -5px;
+    margin-top: 570px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -130px;
+    margin-top: 550px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 150px;
+    top: 650px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 155px;
+    top: 675px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 275px;
+    top: 670px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 120px;
+    top: 630px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 440px;
+    right: 285px;
+  }
+
+  .contado1{
+    margin-top: 650px;
+    margin-left: 150px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 265px;
+    top: 970px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -110px;
+    top: 925px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 210px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 199px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 130px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 190px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 200px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 10px;
+    margin-top: -100px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 95%;
+    margin-left: 26px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 18px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -295px;
+    margin-top: 700px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -300px;
+    margin-top: 700px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -305px;
+    margin-top: 1010px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 85px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 850px;
+ left: 190px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1160px;
+  left: 60px;
+ }
+
+}
+
+@media (max-width: 720px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 180px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 66px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -280px;
+    top: 430px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 120px;
+    left: 190px;
+  }
+
+  .contado{
+    margin-top: 330px;
+    margin-left: 135px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 50px;
+    margin-top: 250px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 10px;
+    margin-top: 40px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: 1px;
+    margin-top: -180px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 82px;
+    margin-top: -120px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 175px;
+    margin-bottom: -750px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 90px;
+    margin-bottom: -175px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 155px;
+    margin-top: 550px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 77px;
+    margin-top: 550px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -25px;
+    margin-top: 550px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 510px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 130px;
+    top: 625px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 140px;
+    top: 640px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 230px;
+    top: 650px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 80px;
+    top: 600px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 400px;
+    right: 285px;
+  }
+
+  .contado1{
+    margin-top: 610px;
+    margin-left: 135px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 246px;
+    top: 920px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -90px;
+    top: 870px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 195px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 176px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 120px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 180px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 190px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -100px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 18px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -310px;
+    margin-top: 680px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -299px;
+    margin-top: 950px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 85px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 830px;
+ left: 150px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 205px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1100px;
+  left: 40px;
+ }
+
+}
+
+@media (max-width: 690px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 180px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 60px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -245px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 155px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 110px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -15px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -30px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 65px;
+    margin-top: -140px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 160px;
+    margin-bottom: -720px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 65px;
+    margin-bottom: -140px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 140px;
+    margin-top: 510px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 65px;
+    margin-top: 510px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -55px;
+    margin-top: 480px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -165px;
+    margin-top: 490px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 115px;
+    top: 590px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 125px;
+    top: 610px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 210px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 360px;
+    right: 265px;
+  }
+
+  .contado1{
+    margin-top: 580px;
+    margin-left: 125px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 225px;
+    top: 860px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -70px;
+    top: 815px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 185px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 170px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 110px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 170px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -265px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -280px;
+    margin-top: 900px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 85px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 195px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1050px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 670px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 150px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 60px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -245px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 155px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 110px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -15px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -30px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 50px;
+    margin-top: -180px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 145px;
+    margin-bottom: -690px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 45px;
+    margin-bottom: -110px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 125px;
+    margin-top: 480px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 50px;
+    margin-top: 480px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -55px;
+    margin-top: 480px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -185px;
+    margin-top: 460px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 100px;
+    top: 560px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 110px;
+    top: 580px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 210px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 320px;
+    right: 250px;
+  }
+
+  .contado1{
+    margin-top: 540px;
+    margin-left: 110px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 210px;
+    top: 860px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -50px;
+    top: 815px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 175px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 160px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 105px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -265px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 900px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 85px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 175px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1050px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 640px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 150px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 60px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -230px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 155px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 110px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -15px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -30px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 45px;
+    margin-top: -180px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 140px;
+    margin-bottom: -680px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 35px;
+    margin-bottom: -110px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 115px;
+    margin-top: 480px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 40px;
+    margin-top: 480px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -70px;
+    margin-top: 480px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -200px;
+    margin-top: 460px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 85px;
+    top: 560px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 100px;
+    top: 570px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 210px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 320px;
+    right: 250px;
+  }
+
+  .contado1{
+    margin-top: 540px;
+    margin-left: 100px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 195px;
+    top: 860px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -40px;
+    top: 815px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 175px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 160px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 105px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -255px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 85px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 170px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1050px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 625px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 150px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 65px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -210px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 165px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 120px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -10px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -25px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 40px;
+    margin-top: -220px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-bottom: -670px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 35px;
+    margin-bottom: -90px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 110px;
+    margin-top: 460px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 35px;
+    margin-top: 450px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -70px;
+    margin-top: 450px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -200px;
+    margin-top: 440px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 85px;
+    top: 540px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 100px;
+    top: 555px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 220px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 65px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 300px;
+    right: 240px;
+  }
+
+  .contado1{
+    margin-top: 520px;
+    margin-left: 100px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 195px;
+    top: 840px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -40px;
+    top: 790px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 170px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 100px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -225px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -255px;
+    margin-top: 900px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 100px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 165px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1050px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 620px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 120px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 55px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -220px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 135px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 92px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -5px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -40px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -50px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 30px;
+    margin-top: -220px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 118px;
+    margin-bottom: -670px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 30px;
+    margin-bottom: -90px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 110px;
+    margin-top: 460px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 35px;
+    margin-top: 450px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -70px;
+    margin-top: 450px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -200px;
+    margin-top: 440px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 85px;
+    top: 540px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 100px;
+    top: 555px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 190px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 35px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 300px;
+    right: 220px;
+  }
+
+  .contado1{
+    margin-top: 520px;
+    margin-left: 100px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 195px;
+    top: 840px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -40px;
+    top: 790px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 166px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 100px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -5px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -220px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 900px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 70px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 160px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 1050px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 600px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 120px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 55px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -210px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 135px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 92px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -5px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -45px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -60px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-top: -240px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-bottom: -650px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 20px;
+    margin-bottom: -70px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: 430px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: 430px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -80px;
+    margin-top: 430px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -220px;
+    margin-top: 400px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 70px;
+    top: 510px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 80px;
+    top: 520px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 180px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 280px;
+    right: 220px;
+  }
+
+  .contado1{
+    margin-top: 490px;
+    margin-left: 90px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 180px;
+    top: 800px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -20px;
+    top: 750px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 155px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 145px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 95px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 150px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -5px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -220px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -235px;
+    margin-top: 830px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 70px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 145px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 985px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 580px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 100px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 55px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -200px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 135px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 92px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -10px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -45px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -60px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-top: -240px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 130px;
+    margin-bottom: -650px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 15px;
+    margin-bottom: -60px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 100px;
+    margin-top: 430px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 25px;
+    margin-top: 430px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -80px;
+    margin-top: 430px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -220px;
+    margin-top: 400px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 70px;
+    top: 510px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 80px;
+    top: 520px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 175px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 20px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 280px;
+    right: 210px;
+  }
+
+  .contado1{
+    margin-top: 490px;
+    margin-left: 90px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 180px;
+    top: 800px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -20px;
+    top: 750px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 155px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 145px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -30px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 95px;
+    margin-top: -35px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 150px;
+    margin-top: -15px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 160px;
+    margin-top: -5px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -80px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -220px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 55px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 145px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 985px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 570px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 100px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -200px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 120px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 80px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -25px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -60px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -70px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: 10px;
+    margin-top: -240px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 115px;
+    top: 520px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: 10px;
+    margin-bottom: -60px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 80px;
+    margin-top: 430px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: 5px;
+    margin-top: 430px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -100px;
+    margin-top: 430px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -220px;
+    margin-top: 400px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 70px;
+    top: 510px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 80px;
+    top: 520px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 165px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 280px;
+    right: 195px;
+  }
+
+  .contado1{
+    margin-top: 490px;
+    margin-left: 90px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 170px;
+    top: 800px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -10px;
+    top: 750px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 135px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 85px;
+    margin-top: -20px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 140px;
+    margin-top: 0px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 150px;
+    margin-top: 0px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -70px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -40px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -220px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -215px;
+    margin-top: 830px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 50px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 130px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 985px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 560px){
+  
+  /* logo */ 
+  
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 100px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -190px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 120px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 80px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -30px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -60px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -85px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-top: -260px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 120px;
+    top: 500px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-bottom: -40px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 75px;
+    margin-top: 410px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-top: 410px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -111px;
+    margin-top: 410px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -240px;
+    margin-top: 390px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 50px;
+    top: 490px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 60px;
+    top: 510px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 165px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 260px;
+    right: 190px;
+  }
+
+  .contado1{
+    margin-top: 470px;
+    margin-left: 70px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 170px;
+    top: 795px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -10px;
+    top: 750px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 145px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 135px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 85px;
+    margin-top: -20px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 130px;
+    margin-top: 0px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 140px;
+    margin-top: 0px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -70px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -40px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -200px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 20px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -195px;
+    margin-top: 830px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 35px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 130px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 985px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 540px){
+   
+  .logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 100px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -180px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    left: 110px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 70px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -40px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -60px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -85px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-top: -260px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 120px;
+    top: 500px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-bottom: -40px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 75px;
+    margin-top: 410px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -1px;
+    margin-top: 410px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -111px;
+    margin-top: 410px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -240px;
+    margin-top: 390px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 50px;
+    top: 490px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 60px;
+    top: 510px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 155px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 1px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 260px;
+    right: 190px;
+  }
+
+  .contado1{
+    margin-top: 470px;
+    margin-left: 70px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 150px;
+    top: 795px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: -1px;
+    top: 750px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 145px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 135px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 85px;
+    margin-top: -20px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 130px;
+    margin-top: 1px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 140px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -60px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -30px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -200px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 20px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -190px;
+    margin-top: 830px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 35px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 125px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 985px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 520px){
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 45px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -170px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 90px;
+    right: 165px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 60px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -50px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -80px;
+    margin-top: 15px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -95px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: -15px;
+    margin-top: -280px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 80px;
+    margin-bottom: -600px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -20px;
+    margin-bottom: -20px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 60px;
+    margin-top: 390px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -15px;
+    margin-top: 390px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -120px;
+    margin-top: 390px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -240px;
+    margin-top: 365px;  
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 40px;
+    top: 475px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 50px;
+    top: 485px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 140px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: -10px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 240px;
+    right: 180px;
+  }
+
+  .contado1{
+    margin-top: 445px;
+    margin-left: 60px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 140px;
+    top: 760px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: 10px;
+    top: 710px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 135px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 88%;
+    margin-left: 1px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 85px;
+    margin-top: -20px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 130px;
+    margin-top: 1px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 140px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -60px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 15px;
+    margin-top: -30px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -180px;
+    margin-top: 630px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 20px;
+    margin-top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -180px;
+    margin-top: 790px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 25px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 115px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 950px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 500px){
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -150px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    top: 100px;
+    right: 140px;
+  }
+
+  .contado{
+    margin-top: 300px;
+    margin-left: 60px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -50px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: 10px;
+    margin-top: 150px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -95px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: -15px;
+    margin-top: -290px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 60px;
+    margin-bottom: -220px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -35px;
+    margin-bottom: 55px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 55px;
+    margin-top: 375px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -10px;
+    margin-top: 380px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -120px;
+    margin-top: 380px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -240px;
+    margin-top: 350px;  
+  }
+  
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 140px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: -15px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 240px;
+    right: 150px;
+  }
+
+  .contado1{
+    margin-top: 445px;
+    margin-left: 60px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 140px;
+    top: 760px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: 10px;
+    top: 710px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 140px;
+    margin-top: 20px;
+   }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 80%;
+    margin-left: 35px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 85px;
+    margin-top: -20px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 42%;
+    margin-left: 130px;
+    margin-top: 1px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 42%;
+    margin-left: 140px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 100%;
+    margin-left: 1px;
+    margin-top: -60px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadrado*/
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 94%;
+    margin-left: 20px;
+    margin-top: -30px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -150px;
+    top: 340px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 20px;
+    top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    left: -150px;
+    top: 540px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 790px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 590px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -155px;
+    margin-top: 790px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 790px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 790px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 790px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 790px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -150px;
+    margin-top: 790px;  
+  }
+  
+
+  /* sillon*/ 
+  .table 
+ {
+  border-collapse:separate;
+  margin-left: 12px;
+ }
+ td, th
+ {
+ border: 1px solid black;
+ text-align: center;
+ position: relative;
+ color:black;
+ font-size: 25px;
+ top: 790px;
+ left: 120px;
+ }
+
+
+ /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 100px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 950px;
+  left: 35px;
+ }
+
+}
+
+@media (max-width: 495px){
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 45px;
+    margin-bottom: -200px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -155px;
+    top: 380px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    margin-top: 340px;
+    right: 150px;
+  }
+
+  .contado{
+    margin-left: 60px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -50px;
+    margin-top: 230px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -80px;
+    margin-top: 10px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -100px;
+    margin-top: -210px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: -25px;
+    margin-top: -290px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 65px;
+    margin-bottom: -220px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -25px;
+    margin-bottom: -1px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-right: -30px;
+    margin-top: 375px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -20px;
+    margin-top: 370px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -125px;
+    margin-top: 370px;
+  }
+  
+  .titulo10{ /*titulo del respaldos */
+    font-size: 40px;
+    color:black;
+    margin-left: -250px;
+    margin-top: 350px;  
+  }
+  
+  .titulo11{ /*titulo del respaldos */
+    font-size: 40px;
+    color:black;
+    left: 30px;
+    bottom: 460px;  
+  }
+
+  .titulo12{ /*titulo del respaldos */
+    font-size: 40px;
+    color:black;
+    left: 40px;
+    bottom: 450px;  
+  }
+
+
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 140px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: 15px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 230px;
+    right: 170px;
+  }
+  
+  .contado1{
+    margin-top: 440px;
+    margin-left: 55px;
+  }
+  
+  .link1{
+    font-size: 20px;
+    color:blue;
+    padding: 15px 25px;
+    text-decoration: none;
+    left: 110px;
+    top: 770px;
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    left: -70px;
+    top: 720px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+   width: 40%;
+   margin-left: 130px;
+   margin-top: 20px;
+  }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 90%;
+    margin-left: -5px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 80px;
+    margin-top: -20px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 10px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 10px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 95%;
+    margin-left: 15px;
+    margin-top: -60px;
+  }
+
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 90%;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 90%;
+    margin-left: 22px;
+    margin-top: -30px;
+  }
+  
+  .description2{ /* caracteristicas de sillon genova */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 50px;
+    top: 100px;  
+  }
+  
+  .description3{ /* caracteristicas de sillon chesterfield */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 20px;
+    top: 100px;  
+  }
+  
+  .description4{ /* caracteristicas de silla gala */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: 40px;
+    margin-top: 370px;  
+  }
+  
+  .description5{ /* caracteristicas de silla alma */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description6{ /* caracteristicas de silla nuvola */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description7{ /* caracteristicas de taburete lima */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description8{ /* caracteristicas de taburete tilo */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description9{ /* caracteristicas de taburete koa */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description10{ /* caracteristicas del respaldo capitone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description11{ /* caracteristicas del respaldo cuadros */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+  
+  .description12{ /* caracteristicas del respaldo botone */
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -160px;
+    margin-top: 810px;  
+  }
+   
+
+  /* sillon*/ 
+  .table 
+  {
+    border-collapse:separate;
+    margin-left: 12px;
+  }
+  td, th
+  {
+   border: 1px solid black;
+   text-align: center;
+   position: relative;
+   color:black;
+   font-size: 25px;
+   top: 790px;
+   left: 120px;
+  }
+
+
+  /* silla, taburete, respaldar */
+ .table1
+ {
+  border-collapse:separate;
+  margin-left: 110px;
+ }
+ .td1, .th1
+ {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 970px;
+  left: 30px;
+ }
+  
+}
+
+@media (max-width: 490px){
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* Sillon Turin */
+
+img{
+  width: 80%;
+  margin-left: 45px;
+  margin-bottom: -210px;
+}
+
+h1{
+  font-size: 30px;
+  color:black;
+  text-align: center;
+  margin-left: 30px;
+  margin-bottom: -300px;  
+}
+
+.description1{
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  margin-left: 40px;
+  margin-top: 450px;  
+}
+
+
+h2{
+  font-size: 30px;
+  color:black;
+  text-align: right;
+  margin-left: 40px;
+  margin-top: 350px;  
+}
+
+.precio{
+  font-size: 50px;
+  color:green;
+  margin-top: 390px;
+  margin-left: 70px;
+}
+
+.contado{
+  margin-top: 350px;
+  margin-left: 60px;
+}
+
+.titulo1{ /*titulo del sillon turin */
+  font-size: 40px;
+  color:black;
+  margin-left: -50px;
+  margin-top: 270px;
+}  
+
+.titulo2{ /*titulo del sillon genova */
+  font-size: 40px;
+  color:black;
+  margin-left: -85px;
+  margin-top: 50px;
+}  
+
+.titulo3{ /*titulo del sillon chesterfield */
+  font-size: 40px;
+  color:black;
+  margin-left: -100px;
+  margin-top: -170px;
+}
+
+.titulo4{ /*titulo del silla Gala */
+  font-size: 40px;
+  color:black;
+  margin-left: -20px;
+  margin-top: -300px;
+}
+
+.titulo5{ /*titulo del silla Alma */
+  font-size: 40px;
+  color:black;
+  margin-left: 65px;
+  margin-bottom: -190px;
+}
+
+.titulo6{ /*titulo del silla Nuvola */
+  font-size: 40px;
+  color:black;
+  margin-left: -25px;
+  margin-bottom: 10px;
+}
+
+.titulo7{ /*titulo del taburete lima */
+  font-size: 40px;
+  color:black;
+  margin-left: 60px;
+  margin-top: 360px;
+}
+
+.titulo8{ /*titulo del taburete tilo */
+  font-size: 40px;
+  color:black;
+  margin-left: -12px;
+  margin-top: 360px;
+}
+
+.titulo9{ /*titulo del taburete koa */
+  font-size: 40px;
+  color:black;
+  margin-left: -120px;
+  margin-top: 360px;
+}
+
+.titulo10{ /*titulo del respaldo Capitone*/
+  font-size: 40px;
+  color:black;
+  margin-left: -250px;
+  margin-top: 330px;
+}
+
+.titulo11{ /*titulo del respaldo Cuadros */
+  font-size: 40px;
+  color:black;
+  left: 30px;
+  top: 440px;
+}
+
+.titulo12{ /*titulo del respaldo Botone */
+  font-size: 40px;
+  color:black;
+  left: 40px;
+  top: 450px;
+}
+
+.link{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color:blue;
+  text-align: right;
+  position: relative;
+  left: 130px;
+  top: 680px;  
+}
+
+.boton {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  position: relative;
+  right: 15px;
+  top: 630px;
+}
+
+.boton:hover {
+  background-color: #223094;
+}  
+
+.precio1{
+  font-size: 50px;
+  color:green;
+  top: 210px;
+  right: 150px;
+}
+
+.contado1{
+  margin-top: 420px;
+  margin-left: 60px;
+}
+
+.link1{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color:blue;
+  text-align: right;
+  position: relative;
+  left: 110px;
+  top: 750px;  
+}
+
+
+.boton1 {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  position: relative;
+  right: 35px;
+  top: 700px;
+}
+
+.boton1:hover {
+  background-color: #223094;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+
+.img1{ /*Valores de la imagen silla gala*/
+  width: 40%;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
+.img2{ /*Valores de la imagen silla alma*/
+  width: 45%;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.img3{ /*Valores de la imagen silla nuvola*/
+  width: 90%;
+  margin-left: 1px;
+  margin-top: -20px;
+}
+
+.img4{ /*Valores de la imagen taburete lima*/
+  width: 60%;
+  margin-left: 90px;
+  margin-top: -30px;
+}
+
+.img5{ /*Valores de la imagen taburete Tilo*/
+  width: 40%;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.img6{ /*Valores de la imagen taburete Koa*/
+  width: 40%;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.img7{ /*Valores de la imagen respaldo Capitone*/
+  width: 95%;
+  margin-left: 15px;
+  margin-top: -60px;
+}
+
+.img8{ /*Valores de la imagen respaldo Cuadros*/
+  width: 90%;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.img9{ /*Valores de la imagen respaldo Botone*/
+  width: 90%;
+  margin-left: 25px;
+  margin-top: -30px;
+}
+
+.description2{ /*Caracteristicas de sillon genova*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  margin-left: -120px;
+  margin-top: 590px;  
+}
+
+.description3{ /*Caracteristicas de sillon chesterfield*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  position: relative;
+  left: -140px;
+  top: 120px;  
+}
+
+.description4{ /*Caracteristicas de silla gala*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  left: -150px;
+  top: 520px;  
+}
+
+.description5{ /*Caracteristicas de silla alma*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  left: 40px;
+  top: 80px;  
+}
+
+.description6{ /*Caracteristicas de silla nuvola*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 40px;
+  top: 135px;  
+}
+
+.description7{ /*Caracteristicas de taburete lima*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 50px;
+  top: 130px;  
+}
+
+.description8{ /*Caracteristicas de taburete tilo*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 50px;
+  top: 130px;  
+}
+
+.description9{ /*Caracteristicas de taburete koa*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 50px;
+  top: 130px;
+}
+
+.description10{ /*Caracteristicas del respaldo capitone*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 50px;
+  top: 130px;
+}
+
+.description11{ /*Caracteristicas del respaldo cuadros*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 50px;
+  top: 130px;
+}
+
+.description12{ /*Caracteristicas del respaldo botone*/
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color:black;
+  text-align: right;
+  left: 50px;
+  top: 130px;
+}
+
+.table
+{
+border-collapse:separate;
+}
+td, th
+{
+border: 1px solid black;
+text-align: center;
+position: relative;
+color:black;
+font-size: 25px;
+top: 900px;
+left: 120px;
+}
+
+
+/* silla, taburete, respaldar */
+.table1
+{
+ border-collapse:separate;
+}
+.td1, .th1
+{
+border: 1px solid black;
+text-align: center;
+position: relative;
+color:black;
+font-size: 25px;
+top: 950px;
+left: 35px;
+}
+
+}
+
+@media (max-width: 481px){
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 45px;
+    margin-bottom: -210px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: -170px;
+    margin-top: 450px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    margin-top: 390px;
+    margin-left: 70px;
+  }
+  
+  .contado{
+    margin-top: 350px;
+    margin-left: 100px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    left: 190px;
+    margin-top: 270px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    left: 190px;
+    margin-top: 20px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    left: 175px;
+    margin-top: -200px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    right: 140px;
+    margin-top: -70px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 60px;
+    margin-bottom: -210px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -25px;
+    margin-bottom: -10px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 40px;
+    margin-top: 360px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -35px;
+    margin-top: 360px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -120px;
+    margin-top: 360px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -260px;
+    margin-top: 310px;
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 20px;
+    top: 440px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 20px;
+    top: 440px;
+  }
+  
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 680px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin-left: -5px;
+    margin-top: 60px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+  .precio1{
+    font-size: 50px;
+    color:green;
+    margin-top: 350px;
+    margin-right: -5px;
+  }
+  
+  .contado1{
+    margin-top: 420px;
+    left: 50px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 110px;
+    top: 630px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    right: 35px;
+    top: 580px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    right: -100px;
+    margin-top: -40px;
+  }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    right: 100px;
+    margin-top: -40px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 90%;
+    margin-left: 10px;
+    margin-top: -80px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 90px;
+    margin-top: -80px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 130px;
+    margin-top: -50px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 130px;
+    margin-top: -50px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 95%;
+    margin-left: 15px;
+    margin-top: -100px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 90%;
+    margin-left: 25px;
+    margin-top: -20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 90%;
+    margin-left: 25px;
+    margin-top: -80px;
+  }
+  
+  .description2{ /*Caracteristicas de sillon genova*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -120px;
+    margin-top: 590px;  
+  }
+  
+  .description3{ /*Caracteristicas de sillon chesterfield*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    position: relative;
+    left: -140px;
+    top: 120px;  
+  }
+  
+  .description4{ /*Caracteristicas de silla gala*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    left: 40px;
+    top: 240px;  
+  }
+  
+  .description5{ /*Caracteristicas de silla alma*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    left: 40px;
+    top: 240px;  
+  }
+  
+  .description6{ /*Caracteristicas de silla nuvola*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 40px;
+    top: 240px;  
+  }
+  
+  .description7{ /*Caracteristicas de taburete lima*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 40px;
+    top: 240px;  
+  }
+  
+  .description8{ /*Caracteristicas de taburete tilo*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 35px;
+    top: 240px;  
+  }
+  
+  .description9{ /*Caracteristicas de taburete koa*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 35px;
+    top: 240px;
+  }
+  
+  .description10{ /*Caracteristicas del respaldo capitone*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 30px;
+    top: 240px;
+  }
+  
+  .description11{ /*Caracteristicas del respaldo cuadros*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 30px;
+    top: 240px;
+  }
+  
+  .description12{ /*Caracteristicas del respaldo botone*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    left: 30px;
+    top: 240px;
+  }
+  
+  .table
+  {
+  border-collapse:separate;
+  margin-left: 30px;
+  }
+  td, th
+  {
+  border: 1px solid black;
+  text-align: center;
+  color:black;
+  font-size: 25px;
+  top: 90px;
+  left: 50px;
+  }
+  
+  /* silla, taburete, respaldar */
+  .table1
+  {
+   border-collapse:separate;
+  }
+  .td1, .th1
+  {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 830px;
+  left: 120px;
+  }
+  
+}
+
+@media (max-width: 480px){
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Sillon Turin */
+  
+  img{
+    width: 80%;
+    margin-left: 45px;
+    margin-bottom: -180px;
+  }
+  
+  h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -300px;  
+  }
+  
+  .description1{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: 62px;
+    margin-top: 350px;  
+  }
+  
+  
+  h2{
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 350px;  
+  }
+  
+  .precio{
+    font-size: 50px;
+    color:green;
+    margin-top: 350px;
+    margin-left: 100px;
+  }
+  
+  .contado{
+    margin-top: 300px;
+    margin-left: 50px;
+  }
+  
+  .titulo1{ /*titulo del sillon turin */
+    font-size: 40px;
+    color:black;
+    margin-left: -70px;
+    margin-top: 220px;
+  }  
+  
+  .titulo2{ /*titulo del sillon genova */
+    font-size: 40px;
+    color:black;
+    margin-left: -100px;
+    margin-top: 10px;
+  }  
+  
+  .titulo3{ /*titulo del sillon chesterfield */
+    font-size: 40px;
+    color:black;
+    margin-left: -120px;
+    margin-top: -220px;
+  }
+  
+  .titulo4{ /*titulo del silla Gala */
+    font-size: 40px;
+    color:black;
+    margin-left: -45px;
+    margin-top: -320px;
+  }
+  
+  .titulo5{ /*titulo del silla Alma */
+    font-size: 40px;
+    color:black;
+    margin-left: 60px;
+    margin-bottom: -180px;
+  }
+  
+  .titulo6{ /*titulo del silla Nuvola */
+    font-size: 40px;
+    color:black;
+    margin-left: -45px;
+    margin-bottom: 15px;
+  }
+  
+  .titulo7{ /*titulo del taburete lima */
+    font-size: 40px;
+    color:black;
+    margin-left: 35px;
+    margin-top: 350px;
+  }
+  
+  .titulo8{ /*titulo del taburete tilo */
+    font-size: 40px;
+    color:black;
+    margin-left: -40px;
+    margin-top: 350px;
+  }
+  
+  .titulo9{ /*titulo del taburete koa */
+    font-size: 40px;
+    color:black;
+    margin-left: -145px;
+    margin-top: 350px;
+  }
+  
+  .titulo10{ /*titulo del respaldo Capitone*/
+    font-size: 40px;
+    color:black;
+    margin-left: -265px;
+    margin-top: 320px;
+  }
+  
+  .titulo11{ /*titulo del respaldo Cuadros */
+    font-size: 40px;
+    color:black;
+    left: 20px;
+    top: 440px;
+  }
+  
+  .titulo12{ /*titulo del respaldo Botone */
+    font-size: 40px;
+    color:black;
+    left: 20px;
+    top: 440px;
+  }
+
+  .link{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 120px;
+    top: 600px;  
+  }
+  
+  .boton {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: -35px;
+    top: 550px;
+  }
+  
+  .boton:hover {
+    background-color: #223094;
+  }  
+  
+  .precio1{
+    font-size: 50px;
+    color:green;
+    top: 210px;
+    right: 145px;
+  }
+  
+  .contado1{
+    margin-top: 420px;
+    margin-left: 40px;
+  }
+  
+  .link1{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:blue;
+    text-align: right;
+    position: relative;
+    left: 100px;
+    top: 720px;  
+  }
+  
+  
+  .boton1 {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: -80px;
+    top: 670px;
+  }
+  
+  .boton1:hover {
+    background-color: #223094;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  
+  .img1{ /*Valores de la imagen silla gala*/
+    width: 40%;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  
+  .img2{ /*Valores de la imagen silla alma*/
+    width: 45%;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  
+  .img3{ /*Valores de la imagen silla nuvola*/
+    width: 90%;
+    margin-left: -1px;
+    margin-top: -20px;
+  }
+  
+  .img4{ /*Valores de la imagen taburete lima*/
+    width: 60%;
+    margin-left: 75px;
+    margin-top: -10px;
+  }
+  
+  .img5{ /*Valores de la imagen taburete Tilo*/
+    width: 40%;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  
+  .img6{ /*Valores de la imagen taburete Koa*/
+    width: 40%;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+  
+  .img7{ /*Valores de la imagen respaldo Capitone*/
+    width: 95%;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+  
+  .img8{ /*Valores de la imagen respaldo Cuadros*/
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .img9{ /*Valores de la imagen respaldo Botone*/
+    width: 90%;
+    margin-left: 25px;
+    margin-top: -20px;
+  }
+  
+  .description2{ /*Caracteristicas de sillon genova*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    margin-left: -100px;
+    margin-top: 490px; 
+  }
+  
+  .description3{ /*Caracteristicas de sillon chesterfield*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    text-align: right;
+    position: relative;
+    margin-left: 65px;
+    margin-top: 340px; 
+  }
+  
+  .description4{ /*Caracteristicas de silla gala*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px; 
+  }
+  
+  .description5{ /*Caracteristicas de silla alma*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;  
+  }
+  
+  .description6{ /*Caracteristicas de silla nuvola*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;  
+  }
+  
+  .description7{ /*Caracteristicas de taburete lima*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;  
+  }
+  
+  .description8{ /*Caracteristicas de taburete tilo*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;  
+  }
+  
+  .description9{ /*Caracteristicas de taburete koa*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;  
+  }
+  
+  .description10{ /*Caracteristicas del respaldo capitone*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;
+  }
+  
+  .description11{ /*Caracteristicas del respaldo cuadros*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;
+  }
+  
+  .description12{ /*Caracteristicas del respaldo botone*/
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color:black;
+    margin-left: -135px;
+    margin-top: 610px;
+  }
+  
+  .table
+  {
+  border-collapse:separate;
+  }
+  td, th
+  {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 780px;
+  left: 100px;
+  }
+  
+  /* silla, taburete, respaldar */
+  .table1
+  {
+   border-collapse:separate;
+  }
+  .td1, .th1
+  {
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  color:black;
+  font-size: 25px;
+  top: 900px;
+  left: 18px;
+  }
+  
+}
+
+
+
+/* Tamaño Web */
+
+@media (min-width: 1200px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+  }
+
+  header{
+    position: fixed;
+    z-index: 999;
+  }
+
+  .logo{
+      display: inline-block;
+      color: var(--white);
+      font-size: 50px;
+      margin-left: 40px;
+      position: relative;
+      top: 30px;
+  }
+
+  .menu li{
+      float: left;
+  }
+  
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--gray);
+
+  }
+
+  .hamb{
+      display: none;
+  }
+
+  h1 {
+ text-align: center;
+ }
+
+}

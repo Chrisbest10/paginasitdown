@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color:black;
+    text-align: right;
+    position: relative;
+    left: -550px;
+    top: 50px;  
+}
+
+*{box-sizing:border-box;}
+
+form{
+    height: 410px;
+	width: 500px;
+	padding:10px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    padding: 10px;
+}
+
+form input[type="text"],
+form input[type="number"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    position: relative;
+    top: 70px;
+    left: 80px;
+}
+
+form input[type="file"]{
+	width:180px;
+	padding:3px 45px;
+	border-radius:3px;
+	display:inline-block;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+
+form button[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+    position: relative;
+    top: 70px;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+/* Detalles */
+.nombre{
+	width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color:black;
+    text-align: right;
+    position: relative;
+    left: -850px;
+    top: 20px;  
+}
+
+.precio{
+	width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:black;
+    text-align: right;
+    position: relative;
+    left: -650px;
+    top: 90px;  
+}
+
+.link{
+	width:10%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+    position: relative;
+    top: -150px;
+	left: 600px;
+
+}
+
+/* products */
+
+.link1{
+	width:10%;
+	padding:8px;
+	margin-top:0px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+    text-decoration: none;
+	color:#fff;
+	background-color:#000;
+    position: relative;
+    top: 90px;
+	left: 590px;
+}
+
+.nombres{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color:black;
+    text-align: center;
+    position: relative;
+    left: -30px;
+    top: 120px;  
+}
+
+.link2{
+	width:10%;
+	padding:5px;
+	margin-top:0px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+    text-decoration: none;
+	color:#fff;
+	background-color:#000;
+    position: relative;
+    top: 150px;
+	left: 590px;
+}
+
+.string1{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    position: relative;
+    top: 70px;
+    left: 80px;
+}
